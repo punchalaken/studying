@@ -1,0 +1,183 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.main {
+    display: flex;
+    flex-direction: row;
+    width: 1600px;
+    height: 1200px;
+    margin: 155px 0 0 245px;
+}
+
+
+.left-column {
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    flex-direction: column;
+    gap: 64px;
+    background-color: #f7f7f7;
+    width: 469px;
+    height: 1140px;
+    margin: 37px 0 0 41px;
+    padding: 38px;
+}
+
+.left-column__image {
+    display: block;
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    filter: grayscale(100%);
+    box-shadow: 0px 7px 11px 0px #74747480;
+}
+
+
+.left-column__about {
+    width: 301px;
+    height: 68px;
+    font-family: sans-serif;
+    text-align: center;
+    font-size: 23px;
+    line-height: 3;
+}
+
+.left-column__information {
+    width: 349px;
+    height: 162px;
+}
+
+.left-column__information li {
+    list-style-type: none;
+    line-height: 1.8em;
+    font-size: 22px;
+    font-family: sans-serif;
+    color: #181818;
+}
+
+.left-column__contacts {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 333px;
+    height: 102px;
+}
+
+.left-column__telegram,
+.left-column__VK,
+.left-column__gmail {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f7f7f7;
+    width: 33%;
+    height: 33%;
+    padding: 5px;
+}
+
+ф .left-column__telegram {
+    color: #24a4ec;
+}
+
+.left-column__contacts>a {
+    text-decoration: none;
+    color: black;
+}
+
+.left-column__contacts img {
+    width: 33%;
+    height: 100%;
+}
+
+
+.main-information {
+    display: flex;
+    flex-direction: column;
+    margin-left: 59px;
+}
+
+
+
+.main-information__header {
+    width: 800px;
+    height: 132px;
+    margin-top: 62px;
+    font-size: 40px;
+    font-family: sans-serif;
+}
+
+.main-information__about {
+    width: 961px;
+    height: 264px;
+
+}
+
+.main-information__about {
+    margin-top: 54px;
+    font-size: 22px;
+    line-height: 25.5px;
+    text-indent: 20px;
+}
+
+.main-information__skills {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    flex-wrap: wrap;
+    width: 930px;
+    height: 518px;
+    margin-top: 60px;
+}
+
+.main-information__skills p {
+    font-size: 22px;
+    line-height: 25.5px;
+    margin-bottom: 1em;
+}
+
+.main-information__goals,
+.main-information__needs,
+.main-information__pain-point,
+.main-information__personality {
+    box-sizing: border-box;
+    width: 440px;
+    height: 194px;
+    padding: 10px;
+}
+
+
+.main-information__skills ul {
+    list-style: none;
+}
+
+.main-information__skills li::before {
+    content: '';
+    float: left;
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    margin: 0.675em 1em 0 0;
+    background-color: #7B7B7B;
+}
+
+.main-information__skills li {
+    line-height: 2em;
+}
+
+.main-information__goals,
+.main-information__needs {
+    height: 194px;
+}
+
+.main-information__pain-point,
+.main-information__personality {
+    height: 274px;
+}
+
+.left-column__gmail>span {
+    color: #eb3e32;
+}
