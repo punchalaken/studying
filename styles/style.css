@@ -77,7 +77,8 @@ body {
 }
 
 .left-column__information>ul,
-.left-column__skills>ul {
+.left-column__skills>ul,
+.main-information__job ul {
     padding: 0;
 }
 
@@ -95,14 +96,19 @@ body {
 
 }
 
-.left-column__skills li {
+.left-column__skills li,
+.main-information__job li {
     list-style-type: none;
     display: inline-block;
     font-size: 20px;
     margin: 3px 5px;
     padding: 3px;
-    background-color: #f7f7f7;
 
+
+}
+
+.left-column__skills li{
+    background-color: #f7f7f7;
 }
 
 .left-column__contacts {
@@ -289,6 +295,7 @@ body {
     margin-left: 80%;
 }
 
+.main-information__job li::before,
 .main-information__university::before {
     content: '';
     float: left;
@@ -300,6 +307,11 @@ body {
 
 }
 
+
 .main-information__education>p {
     padding-left: 10px;
+}
+
+.main-information__job li {
+    margin-left: 22px;
 }
