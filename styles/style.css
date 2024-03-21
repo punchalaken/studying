@@ -22,6 +22,8 @@ body {
     margin: 0;
     padding: 0;
     font-family: "Avenir Next";
+    display: flex;
+    justify-content: center;
 }
 
 .main {
@@ -29,7 +31,7 @@ body {
     flex-direction: row;
     width: 1600px;
     height: 1200px;
-    margin: 155px 0 0 245px;
+    margin: 30px 0 0 0;
 }
 
 
@@ -38,10 +40,10 @@ body {
     align-items: center;
     box-sizing: border-box;
     flex-direction: column;
-    gap: 50px;
+    justify-content: space-between;
     background-color: #f7f7f7;
     width: 469px;
-    height: 1140px;
+    height: 1040px;
     margin: 37px 0 0 41px;
     padding: 38px;
     font-family: "Avenir Next" Arial, Helvetica, sans-serif;
@@ -72,7 +74,8 @@ body {
     text-align: center;
     width: 349px;
     height: 162px;
-    line-height: 1.5;
+    line-height: 27px;
+    font-size: 22px;
 
 }
 
@@ -84,7 +87,6 @@ body {
 
 .left-column__information li {
     list-style-type: none;
-    font-size: 20px;
     color: #181818;
 }
 
@@ -107,7 +109,7 @@ body {
 
 }
 
-.left-column__skills li{
+.left-column__skills li {
     background-color: #f7f7f7;
 }
 
@@ -195,14 +197,14 @@ body {
     height: 100%;
     width: 45%;
     font-size: 22px;
-    line-height: 26, 5px;
+    line-height: 26.5px;
 }
 
 .main-information__job>div,
 .main-information__job>p {
     margin-left: 20px;
     font-size: 22px;
-    line-height: 26, 5px;
+    line-height: 26.5px;
 }
 
 .main-information__progress {
@@ -214,11 +216,6 @@ body {
 }
 
 .main-information__education,
-.main-information__softs {
-    height: 48%;
-    width: 100%;
-}
-
 .main-information__softs {
     height: 48%;
     width: 100%;
@@ -240,7 +237,7 @@ body {
 .main-information__education>h3 {
     margin-block: 10px;
     font-size: 25px;
-    line-height: 30,5px;
+    line-height: 30.5px;
 }
 
 .main-information__levels {
@@ -295,10 +292,12 @@ body {
     margin-left: 80%;
 }
 
-.main-information__job li::before,
-.main-information__university::before {
+.main-information__responsibilities {
+    display: flex;
+}
+
+.main-information__point {
     content: '';
-    float: left;
     margin: 7px 5px 0 0;
     width: 10px;
     height: 10px;
@@ -308,10 +307,232 @@ body {
 }
 
 
-.main-information__education>p {
+.main-information__university {
     padding-left: 10px;
 }
 
 .main-information__job li {
     margin-left: 22px;
+}
+
+@media screen and (361px <=width <=1070px) {
+    .main {
+        width: 1002px;
+        height: 1350px;
+        margin: 34px 0 0 34px;
+    }
+
+    .left-column {
+        width: 469px;
+        height: 1350px;
+        justify-content: flex-start;
+        gap: 50px;
+    }
+
+    .left-column__image {
+        width: 350px;
+        height: 350px;
+    }
+
+    .left-column__about {
+        width: 301px;
+        height: 62px;
+        font-size: 25px;
+        line-height: 30.5px;
+    }
+
+    .left-column__information {
+        width: 349px;
+        height: 162px;
+    }
+
+    .left-column__information li,
+    .left-column__skills li,
+    .main-information__job div, 
+    .main-information__job p,
+    .main-information__about{
+        font-size: 22px;
+        line-height: 27px;
+    }
+
+    .main-information {
+        margin-left: 32px;
+        width: 474px;
+    }
+
+    .main-information__header>h1 {
+        width: 100%;
+        font-size: 64px;
+        margin: 49px 0 0 0;
+    }
+
+    .main-information__subheader {
+        margin: 0 0 23px 0;
+        font-size: 25px;
+        line-height: 30.5px;
+    }
+
+    .main-information__about {
+        width: 100%;
+        height: auto;
+    }
+
+    .main-information__skills {
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+    }
+
+    .main-information__job {
+        width: 440px;
+    }
+
+    .main-information__progress {
+        width: 100%;
+    }
+
+    .main-information__softs {
+        width: 100%;
+        height: auto;
+        order: 1;
+    }
+
+    .main-information__education,
+    .main-information__softs,
+    .main-information__skills {
+        margin-top: 33px;
+    }
+}
+
+@media screen and (width <=360px) {
+
+    .main {
+        width: 360px;
+        height: auto;
+        margin: 0;
+        flex-direction: column;
+        font-size: 17px;
+    }
+
+    .main-information {
+        height: auto;
+    }
+
+    .left-column {
+        width: 100%;
+        margin: 0;
+        gap: 0;
+        padding: 0 0 40px 0;
+        height: auto;
+        gap: 30px;
+    }
+
+    .left-column__image {
+        width: 226px;
+        height: 226px;
+        margin-top: 32px;
+        align-items: flex-start;
+    }
+
+    .left-column__about {
+        font-size: 18px;
+        line-height: 23, 5px;
+
+    }
+
+    .left-column__information {
+        font-size: 17px;
+        width: 100%;
+        line-height: 30.5px;
+    }
+
+    .left-column__contacts {
+        width: 100%;
+    }
+
+    .main-information__header>h1 {
+        font-size: 37px;
+        height: 57px;
+        margin: 45px 0 11px 0;
+    }
+
+    .main-information {
+        margin: 0 0 0 23px;
+        padding: 0;
+        height: auto;
+    }
+
+    .main-information__subheader {
+        font-size: 25px;
+        width: 341px;
+        height: 31px;
+        line-height: 30px;
+        margin: 20px 0 17px 0;
+    }
+
+    .main-information__about {
+        width: 313px;
+        font-size: 17px;
+        line-height: 21px;
+        height: auto;
+    }
+
+    .main-information__job>h3 {
+        font-size: 25px;
+        margin: 45px 0 23px 0;
+        line-height: 30px;
+    }
+
+    .main-information__skills {
+        width: 100%;
+        flex-direction: column;
+        font-size: 17px;
+        height: auto;
+    }
+
+    .main-information__job {
+        width: 100%;
+    }
+
+    .main-information__progress {
+        width: 100%;
+        height: auto;
+    }
+
+    .main-information__point {
+        margin: 5px 5px 0 0;
+    }
+
+    .main-information__job div,
+    .main-information__job p {
+        font-size: 17px;
+    }
+
+    .main-information__softs {
+        order: 1;
+        height: auto;
+        width: 318px;
+    }
+
+    .main-information__softs>h3 {
+        margin: 45px 0 23px 0;
+    }
+
+    .main-information__education {
+        margin: 45px 0 23px 0;
+    }
+
+    .main-information__education>h3 {
+        font-size: 25px;
+        line-height: 30.5px;
+        margin: 0 0 23px 0;
+    }
+
+    .main-information__university {
+        font-size: 17px;
+        line-height: 20px;
+        padding-left: 20px;
+        width: 298px;
+        height: 63px;
+    }
 }
