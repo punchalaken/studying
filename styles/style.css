@@ -18,278 +18,138 @@
     font-weight: 700;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: 25px;
+    line-height: 30.5px;
+}
+
 body {
-    margin: 0;
-    padding: 0;
-    font-family: "Avenir Next";
     display: flex;
+    box-sizing: border-box;
     justify-content: center;
+    font-family: "Avenir Next";
+    font-size: 22px;
+    line-height: 27px;
 }
 
 .main {
     display: flex;
-    flex-direction: row;
-    width: 1600px;
-    height: 1200px;
-    margin: 30px 0 0 0;
+    max-width: 1600px;
+    padding: 10px;
 }
 
-
 .left-column {
+    min-width: 360px;
+    max-width: 469px;
+    max-height: 950px;
     display: flex;
-    align-items: center;
-    box-sizing: border-box;
     flex-direction: column;
-    justify-content: space-between;
+    align-items: center;
     background-color: #f7f7f7;
-    width: 469px;
-    height: 1040px;
-    margin: 37px 0 0 41px;
-    padding: 38px;
-    font-family: "Avenir Next" Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    padding: 20px 10px 20px;
+    margin: 37px 59px 0 41px;
+    gap: 30px;
 }
 
 .left-column__image {
     display: block;
-    width: 350px;
-    height: 350px;
+    width: 88%;
     border-radius: 50%;
     filter: grayscale(100%);
     box-shadow: 0px 7px 11px 0px #74747480;
 }
 
-
-.left-column__about {
-    width: 301px;
-    height: 68px;
-    text-align: center;
-    font-size: 23px;
-    line-height: 3;
-
+.left-column_header {
+    display: none;
 }
 
 .left-column__information {
+    max-width: 349px;
+    width: 95%;
+}
+
+.left-column__information-item {
+    display: flex;
+    justify-content: space-between;
+}
+
+.left-column__skills-list {
+    max-width: 349px;
     display: flex;
     justify-content: center;
-    text-align: center;
-    width: 349px;
-    height: 162px;
-    line-height: 27px;
-    font-size: 22px;
-
+    flex-wrap: wrap;
+    gap: 10px;
 }
 
-.left-column__information>ul,
-.left-column__skills>ul,
-.main-information__job ul {
-    padding: 0;
-}
-
-.left-column__information li {
-    list-style-type: none;
-    color: #181818;
-}
-
-.left-column__skills ul {
-    width: 349px;
-    text-align: center;
-    line-height: 1.5;
-
-
-}
-
-.left-column__skills li,
-.main-information__job li {
-    list-style-type: none;
-    display: inline-block;
-    font-size: 20px;
-    margin: 3px 5px;
-    padding: 3px;
-
-
-}
-
-.left-column__skills li {
-    background-color: #f7f7f7;
+.left-column__skills-list>li {
+    background-color: #7B7B7B;
+    color: #ffffff;
+    padding: 5px;
+    font-size: 18px;
 }
 
 .left-column__contacts {
     display: flex;
-    align-items: center;
+    max-width: 349px;
     flex-wrap: wrap;
-    justify-content: space-around;
-    width: 333px;
-    height: 102px;
+    justify-content: center;
+    gap: 30px;
 }
 
-.left-column__contacts img {
-    margin-right: 5px;
-}
-
-.left-column__telegram,
-.left-column__VK,
-.left-column__gmail {
+.left-column__social {
     display: flex;
     align-items: center;
-    justify-content: center;
-    background-color: #f7f7f7;
-    width: 33%;
-    height: 33%;
-    padding: 5px;
-}
-
-.left-column__contacts .left-column__telegram {
-    color: #24a4ec;
-}
-
-.left-column__contacts>a {
+    max-width: 150px;
+    max-height: 45px;
     text-decoration: none;
     color: black;
 }
 
-.left-column__gmail>span {
-    color: #eb3e32;
+.left-column__social>img {
+    max-width: 30px;
+    max-height: 30px;
+    margin-right: 5px;
 }
 
-.left-column__contacts img {
-    width: 33%;
-    height: 100%;
+.telegram {
+    color: #24a4ec;
 }
-
 
 .main-information {
-    display: flex;
-    flex-direction: column;
-    margin-left: 59px;
+    box-sizing: border-box;
+    margin-top: 62px;
+    max-width: 961px;
 }
 
-
-
 .main-information__header>h1 {
-    width: 800px;
-    height: 132px;
-    margin-top: 62px;
-    margin-bottom: 0;
-    font-size: 96px;
+    font-size: 97px;
+    line-height: 118px;
 }
 
 .main-information__about {
-    display: flex;
-    align-items: center;
-    width: 961px;
-    height: 264px;
-    margin: 0;
-    font-size: 22px;
-    line-height: 25.5px;
-    text-indent: 30px;
+    text-indent: 20px;
 }
 
 .main-information__skills {
     display: flex;
     justify-content: space-between;
-    width: 961px;
-    height: 528px;
 }
 
 .main-information__job,
-.main-information__education,
-.main-information__softs {
-    height: 100%;
-    width: 45%;
-    font-size: 22px;
-    line-height: 26.5px;
-}
-
-.main-information__job>div,
-.main-information__job>p {
-    margin-left: 20px;
-    font-size: 22px;
-    line-height: 26.5px;
-}
-
 .main-information__progress {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 100%;
-    width: 45%;
-}
-
-.main-information__education,
-.main-information__softs {
-    height: 48%;
-    width: 100%;
-}
-
-.main-information__english,
-.main-information__personality,
-.main-information__organization,
-.main-information__educability,
-.main-information__stress {
-    display: flex;
-    flex-direction: column;
-    height: 34px;
-    margin-top: 7px;
+    max-width: 440px;
 }
 
 .main-information__job>h3,
-.main-information__progress>h3,
+.main-information__softs>h3,
 .main-information__education>h3 {
-    margin-block: 10px;
-    font-size: 25px;
-    line-height: 30.5px;
-}
-
-.main-information__levels {
-    height: 18px;
-    display: flex;
-    justify-content: space-between;
-    font-size: 15px;
-    line-height: 18.5px;
-    font-weight: bold;
-}
-
-.main-information__english__line,
-.main-information__personality__line,
-.main-information__organization__line,
-.main-information__educability__line,
-.main-information__stress__line {
-    height: 3px;
-    background-color: #d2d2d2;
-    margin: 5px 7px;
-}
-
-.main-information__english__point,
-.main-information__personality__point,
-.main-information__organization__point,
-.main-information__educability__point,
-.main-information__stress__point {
-    width: 16px;
-    height: 16px;
-    background-color: #7b7b7b;
-    border: 2px solid #ffffff;
-    margin-top: -8px;
-    border-radius: 50%;
-}
-
-.main-information__english__point {
-    margin-left: 59%;
-}
-
-.main-information__personality__point {
-    margin-left: 65%;
-}
-
-.main-information__organization__point {
-    margin-left: 76%;
-}
-
-.main-information__educability__point {
-    margin-left: 70%;
-}
-
-.main-information__stress__point {
-    margin-left: 80%;
+    margin-bottom: 22px;
 }
 
 .main-information__responsibilities {
@@ -297,242 +157,174 @@ body {
 }
 
 .main-information__point {
-    content: '';
     margin: 7px 5px 0 0;
     width: 10px;
     height: 10px;
     border-radius: 50%;
     background-color: #7B7B7B;
+}
 
+.main-information__progress,
+.main-information__softs,
+.main-information__personality {
+    display: flex;
+    flex-direction: column;
+}
+
+.main-information__personality {
+    gap: 10px;
+}
+
+.main-information-levels {
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-information__personality-line {
+    position: relative;
+    height: 3px;
+    background-color: #d2d2d2;
+    margin: 5px 7px;
+}
+
+.main-information__personality-point {
+    position: absolute;
+    bottom: -8px;
+    width: 16px;
+    height: 16px;
+    background-color: #7b7b7b;
+    border: 2px solid #ffffff;
+    border-radius: 50%;
 }
 
 
-.main-information__university {
-    padding-left: 10px;
+.english {
+    margin-left: 59%;
 }
 
-.main-information__job li {
-    margin-left: 22px;
+.psychotype {
+    margin-left: 65%;
 }
 
-@media screen and (361px <=width <=1070px) {
-    .main {
-        width: 1002px;
-        height: 1350px;
-        margin: 34px 0 0 34px;
-    }
-
-    .left-column {
-        width: 469px;
-        height: 1350px;
-        justify-content: flex-start;
-        gap: 50px;
-    }
-
-    .left-column__image {
-        width: 350px;
-        height: 350px;
-    }
-
-    .left-column__about {
-        width: 301px;
-        height: 62px;
-        font-size: 25px;
-        line-height: 30.5px;
-    }
-
-    .left-column__information {
-        width: 349px;
-        height: 162px;
-    }
-
-    .left-column__information li,
-    .left-column__skills li,
-    .main-information__job div, 
-    .main-information__job p,
-    .main-information__about{
-        font-size: 22px;
-        line-height: 27px;
-    }
-
-    .main-information {
-        margin-left: 32px;
-        width: 474px;
-    }
-
-    .main-information__header>h1 {
-        width: 100%;
-        font-size: 64px;
-        margin: 49px 0 0 0;
-    }
-
-    .main-information__subheader {
-        margin: 0 0 23px 0;
-        font-size: 25px;
-        line-height: 30.5px;
-    }
-
-    .main-information__about {
-        width: 100%;
-        height: auto;
-    }
-
-    .main-information__skills {
-        flex-direction: column;
-        width: 100%;
-        height: auto;
-    }
-
-    .main-information__job {
-        width: 440px;
-    }
-
-    .main-information__progress {
-        width: 100%;
-    }
-
-    .main-information__softs {
-        width: 100%;
-        height: auto;
-        order: 1;
-    }
-
-    .main-information__education,
-    .main-information__softs,
-    .main-information__skills {
-        margin-top: 33px;
-    }
+.organization {
+    margin-left: 76%;
 }
 
-@media screen and (width <=360px) {
+.educability {
+    margin-left: 70%;
+}
 
-    .main {
-        width: 360px;
-        height: auto;
-        margin: 0;
-        flex-direction: column;
-        font-size: 17px;
-    }
+.stress {
+    margin-left: 80%;
+}
 
-    .main-information {
-        height: auto;
-    }
+.main-information__education {
+    margin-top: 30px;
+}
 
-    .left-column {
-        width: 100%;
-        margin: 0;
-        gap: 0;
-        padding: 0 0 40px 0;
-        height: auto;
-        gap: 30px;
-    }
 
-    .left-column__image {
-        width: 226px;
-        height: 226px;
-        margin-top: 32px;
-        align-items: flex-start;
-    }
 
-    .left-column__about {
+@media screen and (width <=1500px) {
+    .left-column__information-list {
         font-size: 18px;
-        line-height: 23, 5px;
-
     }
+}
 
-    .left-column__information {
-        font-size: 17px;
-        width: 100%;
-        line-height: 30.5px;
-    }
-
-    .left-column__contacts {
-        width: 100%;
-    }
-
+@media screen and (width <=1300px) {
     .main-information__header>h1 {
-        font-size: 37px;
-        height: 57px;
-        margin: 45px 0 11px 0;
-    }
-
-    .main-information {
-        margin: 0 0 0 23px;
-        padding: 0;
-        height: auto;
-    }
-
-    .main-information__subheader {
-        font-size: 25px;
-        width: 341px;
-        height: 31px;
-        line-height: 30px;
-        margin: 20px 0 17px 0;
-    }
-
-    .main-information__about {
-        width: 313px;
-        font-size: 17px;
-        line-height: 21px;
-        height: auto;
-    }
-
-    .main-information__job>h3 {
-        font-size: 25px;
-        margin: 45px 0 23px 0;
-        line-height: 30px;
+        font-size: clamp(2rem, 1rem + 3vw, 6rem);
     }
 
     .main-information__skills {
-        width: 100%;
         flex-direction: column;
-        font-size: 17px;
-        height: auto;
-    }
-
-    .main-information__job {
-        width: 100%;
-    }
-
-    .main-information__progress {
-        width: 100%;
-        height: auto;
-    }
-
-    .main-information__point {
-        margin: 5px 5px 0 0;
-    }
-
-    .main-information__job div,
-    .main-information__job p {
-        font-size: 17px;
     }
 
     .main-information__softs {
-        order: 1;
-        height: auto;
-        width: 318px;
+        margin-top: 30px;
+        order: 2;
+    }
+}
+
+
+@media screen and (width<=1100px) {
+    .left-column {
+        max-width: 420px;
+        margin: 34px 59px 0 34px;
+    }
+    .main-information{
+        max-width: 420px;
+    }
+}
+
+@media screen and (width<=920px) {
+    .main {
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
     }
 
-    .main-information__softs>h3 {
-        margin: 45px 0 23px 0;
+    .left-column {
+        margin: 0;
+        padding: 20px 0 0 0;
+    }
+
+    .left-column_header {
+        display: block;
+        font-size: 40px;
+    }
+
+    .main-information {
+        max-width: 920px;
+        margin: 0;
+        padding: 24px;
+    }
+
+    .main-information__header>h1 {
+        display: none;
+    }
+
+    .main-information__skills {
+        flex-direction: row;
+    }
+
+    .main-information__progress {
+        margin-left: 20px;
     }
 
     .main-information__education {
-        margin: 45px 0 23px 0;
+        margin: 0;
+    }
+}
+
+@media screen and (width<=650px) {
+    .main-information__skills {
+        flex-direction: column;
     }
 
-    .main-information__education>h3 {
-        font-size: 25px;
-        line-height: 30.5px;
-        margin: 0 0 23px 0;
+    .main-information__progress {
+        margin: 20px 0 0 0;
     }
+}
 
-    .main-information__university {
+@media screen and (width<=500px) {
+    body {
         font-size: 17px;
-        line-height: 20px;
-        padding-left: 20px;
-        width: 298px;
-        height: 63px;
+        line-height: 21px;
     }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-size: 25px;
+    }
+
+    .left-column__image {
+        max-width: 226px;
+        max-height: 226px;
+    }
+
+
 }
