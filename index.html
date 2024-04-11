@@ -4,10 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style/css/index.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/style.css" media="screen">
     <title>Клюев Семен - junior fronend developer</title>
 
 </head>
@@ -15,71 +13,70 @@
 <body>
 
     <div class="main">
-        <section class="left-column">
 
+        <section class="left-column">
+            
             <img class="left-column__image"
-                src="https://sun9-66.userapi.com/s/v1/if1/SN49BsDO0b6qed5l0Js3Gbd1_rObFv4zHKIgaYkzxpwgxgGl-bCuAddQzIpmiZLAqzgWur25.jpg?quality=96&crop=0,17,285,285&as=50x50,100x100,200x200&ava=1&u=E-H-5aqrFJd0MwW5aEarL5_ZbladU1R5DmwrSDSrm5E&cs=200x200"
+                src="image/photo.jpg"
                 alt="Моя фотография">
 
-            <p class="left-column__about">
+            <h2 class="left-column_header">Клюев Семен</h2>
+
+             <h2 class="left-column__about">
                 Junior frontend developer
-            </p>
+            </h2>
 
-            <div class="left-column__information">
-                <ul>
-                    <li>Возраст: 26</li>
-                    <li>Профессия: Frontend developer</li>
-                    <li>Телефон: +9 (999) 000-00-00</li>
-                    <li>Город: Санкт-Петербург</li>
+            <article class="left-column__information">
+                <ul class="left-column__information-list">
+                    <li class="left-column__information-item"><span>Возраст:</span><span>26</span></li>
+                    <li class="left-column__information-item"><span>Профессия:</span><span>Frontend developer</span></li>
+                    <li class="left-column__information-item"><span>Телефон:</span><span>+9 (999) 000-00-00</span></li>
+                    <li class="left-column__information-item"><span>Город:</span><span>Санкт-Петербург</span></li>
                 </ul>
-            </div>
+            </article>
 
-            <div class="left-column__contacts">
+            <article class="left-column__skills">
+                <ul class="left-column__skills-list">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>TypeScript</li>
+                    <li>Vue2</li>
+                    <li>Vue3</li>
+                    <li>Vite</li>
+                    <li>NPM</li>
+                    <li>GIT</li>
+                    <li>Figma</li>
+                    <li>Docker</li>
+                </ul>
+            </article>
 
-                <a href="https://t.me/Punchalaken" class="left-column__telegram">
+            <article class="left-column__contacts">
+                <a href="https://t.me/Punchalaken" target="_blank" class="left-column__social">
                     <img src="image/telegram-icon.png" alt="Иконка телеграма">
-                    <span>Telegram</span>
+                    <span class="Telegram">Telegram</span>
                 </a>
 
-                <a href="https://vk.com/punchalaken" class="left-column__VK">
+                <a href="https://vk.com/punchalaken" target="_blank" class="left-column__social">
                     <img src="image/vk-icon.png" alt="Иконка ВКонтакте">
                     <span>ВКонтакте</span>
                 </a>
 
-                <a href="mailto:penekkakti@gmail.com" class="left-column__gmail">
+                <a href="mailto:penekkakti@gmail.com" target="_blank" class="left-column__social">
                     <img src="image/gmail-icon.png" alt="Иконка Gmail">
                     <span>Gmail</span>
                 </a>
-
-            </div>
+            </article>
 
         </section>
 
+        <section class="main-information">
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        <!-- <section class="main-information">
             <header class="main-information__header">
                 <h1>Клюев Семен</h1>
             </header>
-
+            
+            <h2 class="main-information__subheader">Обо мне:</h2>
             <p class="main-information__about">
                 Я приверженец активного и позитивного образа жизни. Всегда стараюсь построить рабочий
                 процесс так, чтобы люди, работающие со мной в команде, чувствовали себя комфортно и
@@ -88,46 +85,95 @@
                 коллекционированием лего, кинематографом.
             </p>
 
-
             <div class="main-information__skills">
-                <div class="main-information__goals">
-                    <p>Цели:</p>
-                    <ul>
-                        <li>Искать решение наиболее эффективные решения поставленных передо мной задач.</li>
-                        <li>Делиться с коллегами опытом, находить что-то новое вместе.</li>
-                    </ul>
+
+                <div class="main-information__job">
+                    <h3>Медицинский брат</h3>
+                    <div class="main-information__job__date">Апрель 2019 - Октябрь 2023</div>
+                    <p>ГБУЗ Ленинградская областная клиническая больница, Санкт-Петербург.</p>
+                    <div class="main-information__responsibilities">
+                        <div class="main-information__point"></div>
+                        <span>Доврачебная медицинская помощь</span>
+                    </div>
+                    <div class="main-information__responsibilities">
+                        <div class="main-information__point"></div>
+                        <span>Руководство младшим мед. персоналом</span>
+                    </div>
+                    <div class="main-information__responsibilities">
+                        <div class="main-information__point"></div>
+                        <span>Организация ухода за больным</span>
+                    </div>
                 </div>
 
-                <div class="main-information__needs">
-                    <p>Pain points:</p>
-                    <ul>
-                        <li>123</li>
-                        <li>123</li>
-                    </ul>
-                </div>
+                <div class="main-information__progress">
+                    
+                    <div class="main-information__softs">
+                        <h3>Навыки:</h3>
+                        <div class="main-information__personality">
+                            <div class="main-information-levels">
+                                <div>Elementary</div>
+                                <div>Advanced</div>
+                            </div>
+                            <div class="main-information__personality-line">
+                                <div class="main-information__personality-point english"></div>
+                            </div>
+                        </div>
 
-                <div class="main-information__pain-point">
-                    <p>Needs:</p>
-                    <ul>
-                        <li>123</li>
-                        <li>123</li>
-                    </ul>
-                </div>
+                        <div class="main-information__personality">
+                            <div class="main-information-levels">
+                                <div>Интроверт</div>
+                                <div>Экстраверт</div>
+                            </div>
+                            <div class="main-information__personality-line">
+                                <div class="main-information__personality-point psychotype"></div>
+                            </div>
+                        </div>
 
-                <div class="main-information__personality">
-                    <p>Personality:</p>
-                    <ul>
-                        <li>123</li>
-                        <li>123</li>
-                    </ul>
-                </div>
+                        <div class="main-information__personality">
+                            <div class="main-information-levels">
+                                <div>Рассеяный</div>
+                                <div>Организованный</div>
+                            </div>
+                            <div class="main-information__personality-line">
+                                <div class="main-information__personality-point organization"></div>
+                            </div>
+                        </div>
 
+                        <div class="main-information__personality">
+                            <div class="main-information-levels">
+                                <div>Инертный</div>
+                                <div>Любознательный</div>
+                            </div>
+                            <div class="main-information__personality-line">
+                                <div class="main-information__personality-point educability"></div>
+                            </div>
+                        </div>
+
+                        <div class="main-information__personality">
+                            <div class="main-information-levels">
+                                <div>Нервный</div>
+                                <div>Стрессоустойчивый</div>
+                            </div>
+                            <div class="main-information__personality-line">
+                                <div class="main-information__personality-point stress"></div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="main-information__education">
+                        <h3>Образование:</h3>
+                        <div class="main-information__university"> Высшее: Военно-медицинская академия им. С. М. Кирова.
+                            Лечебный факультет 2021г.</div>
+                    </div>
+
+                </div>
+                
             </div>
-        </section> -->
+
+        </section>
+
     </div>
-
 </body>
-
-
 
 </html>
