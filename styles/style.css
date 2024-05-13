@@ -260,8 +260,13 @@ body {
     }
 
     .left-column {
+        min-width: 90%;
         margin: 0;
         padding: 20px 0 0 0;
+    }
+
+    .left-column__image {
+        max-width: 340px;
     }
 
     .left-column_header {
@@ -320,5 +325,11 @@ body {
     .left-column__image {
         max-width: 226px;
         max-height: 226px;
+    }
+}
+
+@media screen and (width<=500px) {
+    .left-column {
+        min-width: 100%;
     }
 }
